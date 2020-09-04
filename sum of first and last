@@ -1,1 +1,31 @@
+import java.util.Scanner;
 
+public class reverse {
+
+
+
+
+        public static void main(String[] args)
+        {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("enter the testcases till you want to run the code");
+            int t = sc.nextInt();
+            for(int k = 0 ; k<t ; k++ ) {
+                System.out.println("enter the number whoes sum you want");
+                int n = sc.nextInt();
+                int temp = n;
+                int sum = 0;
+                int c = 0;
+                while (temp > 0) {
+                    int lastdigit = temp % 10;
+                    temp /= 10;
+                    sum = lastdigit + sum;
+
+
+                }
+
+                System.out.println(sum);
+            }
+
+
+        }
